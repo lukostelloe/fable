@@ -135,7 +135,7 @@
           leave me a message and i'll get back to you soon
         </h2>
         <form action="/action_page.php">
-          <label for="fname">First Name</label>
+          <label for="fname">name</label>
           <input
             type="text"
             id="fname"
@@ -143,13 +143,13 @@
             placeholder="first name..."
           />
 
-          <label for="lname">Last Name</label>
+          <label for="lname">phone</label>
           <!-- <br /> -->
           <input
             type="text"
             id="lname"
             name="lastname"
-            placeholder="last name..."
+            placeholder="number..."
           />
           <!-- <br /> -->
 
@@ -163,17 +163,17 @@
           />
           <!-- <br /> -->
 
-          <label for="country">PostCode</label>
+          <label for="country">your order</label>
           <!-- <br /> -->
           <select id="country" name="country">
-            <option value="france">France</option>
-            <option value="canada">Irland</option>
-            <option value="usa">USA</option>
-            <option value="UK">UK</option>
-            <option value="australie">Australie</option>
+            <option value="1">brownies(6)</option>
+            <option value="2">amaretto(6)</option>
+            <option value="3">brownies, amaretto(12)</option>
+            <option value="4">croissants(6)</option>
+            <option value="5">mixed surprise(12)</option>
           </select>
           <!-- <br /> -->
-          <label for="subject">Subject</label>
+          <label for="subject">custom orders, questions</label>
           <!-- <br /> -->
           <textarea
             id="subject"
@@ -183,7 +183,15 @@
             maxlength="500"
             ;
           ></textarea>
-
+          <input
+            type="checkbox"
+            id="subscribe"
+            name="subscribe"
+            value="subscribe"
+          />
+          <label for="subscribe">
+            I want to sign up for email updates with fable</label
+          ><br />
           <input type="submit" value="Submit" />
         </form>
       </div>
@@ -192,7 +200,7 @@
     <!-- FOOTER -->
     <footer>
       <p>
-        Kate O'Sullivan, fablexbakes - 2021 Design:
+        Kate O'Sullivan, fable.bakes - 2021 Design:
         <a href="mailto:lukostelloe@gmail.com">lukostelloe@gmail.com</a>
       </p>
     </footer>

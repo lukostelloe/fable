@@ -81,7 +81,7 @@ li a:hover:not(.active) {
   animation: appear 3s;
   height: 500px;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .header:hover {
@@ -281,7 +281,7 @@ position: relative;
   flex-direction: row;
 }
 
-.container:hover .image {
+.container:hover {
   opacity: 0.8;
 }
 
