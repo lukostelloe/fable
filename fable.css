@@ -533,6 +533,13 @@ footer {
     text-align: center;
   }
 }
+#linktome {
+  color: white;
+}
+
+#linktome:hover {
+  color: rgb(191, 238, 250);
+}
 
 body::-webkit-scrollbar {
   width: 1em;
