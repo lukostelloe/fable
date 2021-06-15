@@ -19,11 +19,7 @@
         >
       </li>
       <li>
-        <a
-          href="https://www.linkedin.com/in/luke-costelloe-7a88b7139/"
-          target="_blank"
-          >order</a
-        >
+        <a href="#qform">order</a>
       </li>
       <li><a href="mailto:lukostelloe@gmail.com" target="_blank">call</a></li>
     </ul>
@@ -44,26 +40,6 @@
           best. Simples! Please get in touch for any questions about orders or
           deliveries :D
         </p>
-      </div>
-
-      <!-- QUALIFICATIONS -->
-
-      <div class="progress">
-        <h2 class="heading">
-          Experience, competence, qualification, sprinkled with sugar
-        </h2>
-      </div>
-
-      <!-- MENU -->
-
-      <div class="menu">
-        <h2 id="menu">what we have in store</h2>
-        <p>almond bakes, glazed, golden, floury, sugary, doughy, nicey</p>
-        <p>
-          chocolate and sea salt brownies (with coffe on Sunday morning of
-          course)
-        </p>
-        <p>lovely strawberry tarts that are teeny tiny</p>
       </div>
 
       <!-- HOVER ON IMAGES -->
@@ -95,6 +71,25 @@
           </div>
         </div>
       </section>
+      <!-- QUALIFICATIONS -->
+
+      <div class="progress">
+        <h2 class="heading">
+          Experience, competence, qualification, sprinkled with sugar
+        </h2>
+      </div>
+
+      <!-- MENU -->
+
+      <div class="menu">
+        <h2 id="menu">what we have in store</h2>
+        <p>almond bakes, glazed, golden, floury, sugary, doughy, nicey</p>
+        <p>
+          chocolate and sea salt brownies (with coffe on Sunday morning of
+          course)
+        </p>
+        <p>lovely strawberry tarts that are teeny tiny</p>
+      </div>
 
       <!-- SLIDESHOW -->
 
@@ -117,6 +112,12 @@
           <div class="text">tahini style cookies</div>
         </div>
 
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/cookies.jpg" style="width: 100%" />
+          <div class="text">lovely icing biscuits</div>
+        </div>
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
@@ -126,14 +127,13 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
 
       <!-- QUESTIONFORM -->
 
-      <div class="questionform">
-        <h2 class="heading">
-          leave me a message and i'll get back to you soon
-        </h2>
+      <div id="qform" class="questionform">
+        <h2 class="heading">order quickly but eat slowly</h2>
         <form action="/action_page.php">
           <label for="fname">name</label>
           <input
@@ -172,13 +172,22 @@
             <option value="4">croissants(6)</option>
             <option value="5">mixed surprise(12)</option>
           </select>
+
+          <label for="country">pick-up or delivery?</label>
           <!-- <br /> -->
+          <select id="country" name="country">
+            <option value="1">pick-up</option>
+            <option value="2">delivery</option>
+          </select>
+
+          <!-- <br /> -->
+
           <label for="subject">custom orders, questions</label>
           <!-- <br /> -->
           <textarea
             id="subject"
             name="subject"
-            placeholder="what's up???"
+            placeholder="let me know what you need..."
             style="height: 100px"
             maxlength="500"
             ;
@@ -200,7 +209,7 @@
     <!-- FOOTER -->
     <footer>
       <p>
-        Kate O'Sullivan, fable.bakes - 2021 Design:
+        Kate O'Sullivan fable.bakes - 2021 Design:
         <a href="mailto:lukostelloe@gmail.com">lukostelloe@gmail.com</a>
       </p>
     </footer>
