@@ -114,7 +114,7 @@ li a:hover:not(.active) {
   text-shadow: 3px 3px rgb(95, 99, 100);
   margin: 0 auto;
   padding: 100px;
-  background-color: rgb(152, 124, 121);
+  background-color: rgb(151, 136, 134);
   animation: swipe 1s;
   opacity: 0.7;
   transition: box-shadow 0.3s ease-in-out;
@@ -158,13 +158,13 @@ li a:hover:not(.active) {
 }
 
 .aboutfable:hover {
-  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 1px 1px 30px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.5s ease-in-out;
 }
 
-/* LANGUAGESPROGRESS */
+/* QUALIFICATIONS */
 
-.progress {
+.qualifications {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,28 +178,7 @@ li a:hover:not(.active) {
   font-size: 18px;
 }
 
-.progress:hover {
-  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-/* EXPERPRO */
-
-.experpro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: #e9e6e3;
-  width: 100%;
-  margin: 50px auto;
-  padding: 10px;
-  text-align: left;
-  font-size: 18px;
-}
-
-.experpro:hover {
+.qualifications:hover {
   box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -208,7 +187,7 @@ li a:hover:not(.active) {
 
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
@@ -223,6 +202,27 @@ li a:hover:not(.active) {
 .menu:hover {
   box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.menuimage {
+  height: 400px;
+  width: 500px;
+}
+
+.menupics {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin-bottom: 10px;
+  background-color: #e9e6e3;
+  width: 100%;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
 }
 
 /* PHOTOSHOVER */
@@ -358,9 +358,9 @@ img {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/4 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: grey;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -492,14 +492,7 @@ footer {
   text-align: center;
 }
 
-.htmlcssjs {
-  width: 100px;
-  margin: 0 auto;
-}
-
-.photoshoplogo {
-  width: 30px;
-  margin: 0 auto;
+#check {
 }
 
 @media only screen and (max-width: 600px) {
@@ -509,13 +502,6 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-
-  .faces {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .complogos {
